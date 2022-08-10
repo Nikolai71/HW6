@@ -21,11 +21,12 @@ void WriteArray(int[] array){
   Console.WriteLine();
 }
 
-int QuantityPositive(int[] array){
+int PositiveNumbers(int[] array){
     int quantity = 0;
     for (int i = 0; i<array.Length; i++ ){
     if (array[i] % 2 == 0)
-    {
+
+        {
       quantity++;
     }
   }
@@ -35,7 +36,7 @@ int QuantityPositive(int[] array){
 
 FillArray(numbers, 100, 1000);
 WriteArray(numbers);
-Console.WriteLine($"Четные числа в массиве: ");
 
-int quantity = QuantityPositive(numbers);
+int quantity = PositiveNumbers(numbers);
+
 Console.WriteLine($"Количество чётных чисел в массиве: {quantity}");
